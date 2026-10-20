@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101914">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="game-card">
+    <header class="game-header">
+      <div>
+        <h1>Snake<span></span></h1>
+      </div>
+      <div class="score-box" aria-live="polite">
+        <span class="score-label">PONTOS</span>
+        <strong id="score">00</strong>
+      </div>
+    </header>
+
+    <section class="game-area" aria-label="Área do jogo Snake">
+      <canvas id="game-canvas" width="600" height="400" aria-label="Tabuleiro do jogo"></canvas>
+      <div class="game-overlay" id="game-overlay">
+        <div class="overlay-content">
+          <span class="overlay-icon" aria-hidden="true">✦</span>
+          <h2 id="overlay-title">PRONTO?</h2>
+          <p id="overlay-message">Utilize as setas do teclado ou W, A, S, D para movimentar a cobra.</p>
+          <p class="overlay-action" id="overlay-action">Aperte ENTER para iniciar o jogo</p>
+        </div>
+      </div>
+    </section>
+
+    <nav class="touch-controls" aria-label="Controles de direção">
+      <button class="direction-button direction-up" type="button" data-direction="ArrowUp" aria-label="Mover para cima">↑</button>
+      <button class="direction-button direction-left" type="button" data-direction="ArrowLeft" aria-label="Mover para a esquerda">←</button>
+      <button class="direction-button direction-down" type="button" data-direction="ArrowDown" aria-label="Mover para baixo">↓</button>
+      <button class="direction-button direction-right" type="button" data-direction="ArrowRight" aria-label="Mover para a direita">→</button>
+    </nav>
+
+    <footer class="game-footer">
+      <p class="keyboard-hint">↑ ↓ ← → <span>ou</span> W A S D</p>
+    </footer>
+  </main>
+</body>
+</html>
+
+
+
